@@ -1,0 +1,19 @@
+extends layout
+
+block title
+  title NMVC
+  meta(name="description",content="")
+  link(rel="stylesheet", href="css/all.css")
+
+block topScripts
+  - if (DEBUG)
+    script(data-main="/app/main",src="/libs/require/require.js")
+  - else
+    script(data-main="/app/main",src="/libs/require/require.js")
+
+block styles
+
+block content
+  div#app-wrapper hellow
+
+block bottomScripts
